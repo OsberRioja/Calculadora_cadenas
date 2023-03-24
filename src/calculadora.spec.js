@@ -13,4 +13,8 @@ describe("Sumar", () => {
     let cadena="4,1";
     expect(sumarNumeros(cadena)).toEqual(5);
   });
+  it("sumar mas de 2 numeros separados por ,", () => {
+    let cadena="4,1,5,10";
+    expect(sumarNumeros(cadena)).toEqual(20);
+  });
 });
