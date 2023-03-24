@@ -4,8 +4,13 @@ function sumarNumeros(cadena){
         return 0;
     }
     else{
-        numeros=cadena.split(",");
-        return numeros[0]+numeros[1];
+        var numeros=cadena.split(",");
+        if(numeros.length==1){
+            return parseInt(numeros[0]);
+        }
+        else{
+            return parseInt(numeros[0])+parseInt(numeros[1]);
+        }
     }
 }
 
