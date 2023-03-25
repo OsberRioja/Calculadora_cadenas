@@ -21,4 +21,8 @@ describe("Sumar", () => {
     let cadena="4.1,5-10";
     expect(sumarNumeros(cadena)).toEqual(20);
   });
+  it("numeros mayores a 1000 son ignorados", () => {
+    let cadena="4.1,5-10,1100";
+    expect(sumarNumeros(cadena)).toEqual(20);
+  });
 });
