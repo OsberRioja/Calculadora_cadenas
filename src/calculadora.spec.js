@@ -33,4 +33,8 @@ describe("Sumar", () => {
     let cadena="[;],[*],4;1;5*10";
     expect(sumarNumeros(cadena)).toEqual(20);
   });
+  it("poner delimitador de mas de un caracter", () => {
+    let cadena="[****],4****1****5****10";
+    expect(sumarNumeros(cadena)).toEqual(20);
+  });  
 });
